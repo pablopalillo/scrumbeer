@@ -1,0 +1,81 @@
+[23-Feb-2016 15:56:28 UTC] PHP Fatal error:  Class 'Phalcon\Loader' not found in /home/ubuntu/workspace/public/index.php on line 13
+[23-Feb-2016 15:56:28 UTC] PHP Stack trace:
+[23-Feb-2016 15:56:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[23-Feb-2016 16:03:31 UTC] PHP Fatal error:  Class 'Phalcon\Loader' not found in /home/ubuntu/workspace/public/index.php on line 13
+[23-Feb-2016 16:03:31 UTC] PHP Stack trace:
+[23-Feb-2016 16:03:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[23-Feb-2016 16:11:43 UTC] PHP Fatal error:  Class 'Phalcon\Loader' not found in /home/ubuntu/workspace/public/index.php on line 13
+[23-Feb-2016 16:11:43 UTC] PHP Stack trace:
+[23-Feb-2016 16:11:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:20:49 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:20:49 UTC] PHP Stack trace:
+[29-Mar-2016 19:20:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:20:49 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:20:49 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:20:49 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:22:04 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:22:04 UTC] PHP Stack trace:
+[29-Mar-2016 19:22:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:22:04 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:22:04 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:22:04 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:24:59 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:24:59 UTC] PHP Stack trace:
+[29-Mar-2016 19:24:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:24:59 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:24:59 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:24:59 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:29:13 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:29:13 UTC] PHP Stack trace:
+[29-Mar-2016 19:29:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:29:13 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:29:13 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:29:13 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:30:01 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:30:01 UTC] PHP Stack trace:
+[29-Mar-2016 19:30:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:30:01 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:30:01 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:30:01 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:30:04 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:30:04 UTC] PHP Stack trace:
+[29-Mar-2016 19:30:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:30:04 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:30:04 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:30:04 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:41:13 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:41:13 UTC] PHP Stack trace:
+[29-Mar-2016 19:41:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:41:13 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:41:13 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:41:13 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:42:53 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:42:53 UTC] PHP Stack trace:
+[29-Mar-2016 19:42:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:42:53 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:42:53 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:42:53 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:43:33 UTC] PHP Fatal error:  Call to undefined function usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:43:33 UTC] PHP Stack trace:
+[29-Mar-2016 19:43:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:43:33 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:43:33 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:43:33 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:45:08 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 19:45:08 UTC] PHP Stack trace:
+[29-Mar-2016 19:45:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 19:45:08 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:45:08 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 19:45:08 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 20:07:48 UTC] PHP Fatal error:  Call to undefined function Usuarios() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 15
+[29-Mar-2016 20:07:48 UTC] PHP Stack trace:
+[29-Mar-2016 20:07:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 20:07:48 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 20:07:48 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 20:07:48 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 20:09:44 UTC] PHP Fatal error:  Call to undefined method UsuariosController::save() in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 17
+[29-Mar-2016 20:09:44 UTC] PHP Stack trace:
+[29-Mar-2016 20:09:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[29-Mar-2016 20:09:44 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 20:09:44 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 20:09:44 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
