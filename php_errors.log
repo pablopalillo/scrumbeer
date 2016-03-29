@@ -79,3 +79,4 @@
 [29-Mar-2016 20:09:44 UTC] PHP   2. Phalcon\Mvc\Application->handle() /home/ubuntu/workspace/public/index.php:54
 [29-Mar-2016 20:09:44 UTC] PHP   3. Phalcon\Dispatcher->dispatch() /home/ubuntu/workspace/public/index.php:54
 [29-Mar-2016 20:09:44 UTC] PHP   4. UsuariosController->guardarAction() /home/ubuntu/workspace/public/index.php:54
+[29-Mar-2016 21:52:06 UTC] PHP Fatal error:  Class 'Phalcon\Loader' not found in /home/ubuntu/workspace/public/index.php on line 12
