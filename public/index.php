@@ -35,11 +35,32 @@ try {
     
     
     // Setup the view component
-    $di->set('view', function () {
+ /**   $di->set('view', function () {
         $view = new View();
         $view->setViewsDir('../app/views/');
         return $view;
     });
+    **/
+    
+    // Plantillas Volt
+    // Registering Volt as template engine
+    $di->set(
+        'view',
+        function () {
+    
+            $view = new View();
+    
+            $view->setViewsDir('../app/views/');
+    
+            $view->registerEngines(
+                array(
+                    ".phtml" => 'Phalcon\Mvc\View\Engine\Volt'
+                )
+            );
+    
+            return $view;
+        }
+    );
 
     // Setup a base URI so that all generated URIs include the "tutorial" folder
     $di->set('url', function () {
