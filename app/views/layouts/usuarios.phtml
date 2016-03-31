@@ -1,9 +1,15 @@
 {% extends "layouts/__main.phtml" %}
-{% block title %} Y de fieras salvajes como no {% endblock %}
+{% block title %} {{titulo}} {% endblock %}
 {% block content %}
-    <article>
-        <header><h1>Usuarios</h1></header>
-        <section><?php echo $this->getContent(); ?></section>
-        <footer></footer>
-    </article>
+    <div class="column row">
+        <hr>
+        <article class="small-12 columns">
+            <header>
+                <h1>{{titulo}}</h1>
+            </header>
+            <section>
+                <?php echo $this->getContent(); ?>
+            </section>
+        </article>
+    </div>
 {% endblock %}
