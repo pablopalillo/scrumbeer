@@ -31,7 +31,15 @@
                 </div>
             </div>
         </div>
-            
+        
+        {% if this.flash.success|default %}
+        <div class="row">
+            <div class="small-12 medium-12 columns alert alert callout">
+                {{ this.flash.success }}
+            </div>
+        </div>
+        {% endif %}
+        
         <div class="column row main">
             {% block content %}{% endblock %}
         </div>

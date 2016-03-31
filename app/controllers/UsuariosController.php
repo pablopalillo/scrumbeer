@@ -14,12 +14,7 @@ class UsuariosController extends Controller
         
     }
     
-    public function adduserAction()
-    {
-        $this->view->titulo             = "Crear Usuario";
-        $this->view->form               = new UsuariosForm;
-    }
-    
+
     public function guardarAction()
     {
         $this->view->titulo             = "Crear Usuario";
@@ -30,20 +25,12 @@ class UsuariosController extends Controller
             $usuario            =   new  Usuarios();    
             $data               = $this->request->getPost();
             
-            if(!$this->view->form->isValid($data,$usuario))
-            {
-                foreach ($this->view->form->getMessages() as $message) 
-                {
-                    $this->flash->error($message);
-                }
-
-            }
-            else
+            if($this->view->form->isValid($data,$usuario))
             {
                 $usuario->estado    = '1';
                 // Para sqllite que no existen los AUTO numerico.
                 $usuario->id        = 'ROWID';
-                $result             =       $usuario->save($this->request->getPost(), array('nombre','apellidos','telefono'));    
+                $result             =  $usuario->save($this->request->getPost(), array('nombre','apellidos','telefono'));    
                  if( !$result )
                  {
                          foreach ($usuario->getMessages() as $message) 
@@ -61,6 +48,7 @@ class UsuariosController extends Controller
                 return;
             
             }
+
             
         }
         
