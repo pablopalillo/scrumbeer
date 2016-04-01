@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+a:5:{i:0;s:214:"<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="/public/css/foundation.min.css" type="text/css" />
         <link rel="stylesheet" href="/public/css/app.css" type="text/css" />
-        <title> <?php echo $titulo; ?>  || Srum Beer</title>
+        <title>";s:5:"title";N;i:1;s:1585:" || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -41,19 +41,7 @@
         <?php } ?>
         
         <div class="column row main">
-            
-    <div class="column row">
-        <hr>
-        <article class="small-12 columns">
-            <header>
-                <h1><?php echo $titulo; ?></h1>
-            </header>
-            <section>
-                <?php echo $this->getContent(); ?>
-            </section>
-        </article>
-    </div>
-
+            ";s:7:"content";N;i:2;s:634:"
         </div>
         <div class="row column">
             <hr>
@@ -72,4 +60,4 @@
         <script src="js/vendor/foundation.js"></script>
         <script src="js/app.js"></script>
     </body>
-</html>
+</html>";}

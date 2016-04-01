@@ -31,7 +31,15 @@
                 </div>
             </div>
         </div>
-            
+        
+        <?php if ((empty($this->flash->success) ? ($this->flash->success) : ($this->flash->success))) { ?>
+        <div class="row">
+            <div class="small-12 medium-12 columns alert alert callout">
+                <?php echo $this->flash->success; ?>
+            </div>
+        </div>
+        <?php } ?>
+        
         <div class="column row main">
             
 

@@ -108,3 +108,11 @@
 [31-Mar-2016 20:17:02 UTC] PHP Fatal error:  Call to a member function isValid() on a non-object in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 33
 [31-Mar-2016 20:20:59 UTC] PHP Fatal error:  Call to a member function isValid() on a non-object in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 33
 [31-Mar-2016 20:49:38 UTC] PHP Warning:  preg_match(): Compilation failed: nothing to repeat at offset 0 in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 33
+[01-Apr-2016 14:22:35 UTC] PHP Parse error:  syntax error, unexpected 'APP_PATH' (T_STRING), expecting ')' in /home/ubuntu/workspace/public/index.php on line 19
+[01-Apr-2016 14:23:00 UTC] PHP Warning:  parse_ini_file(APP_PATHapp/config/config.ini): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/index.php on line 13
+[01-Apr-2016 14:23:22 UTC] PHP Warning:  parse_ini_file(APP_PATHapp/config/config.ini): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/index.php on line 13
+[01-Apr-2016 14:24:11 UTC] PHP Warning:  parse_ini_file(APP_PATH/app/config/config.ini): failed to open stream: No such file or directory in /home/ubuntu/workspace/public/index.php on line 13
+[01-Apr-2016 14:47:13 UTC] PHP Catchable fatal error:  Argument 1 passed to Phalcon\Db\Adapter\Pdo::__construct() must be of the type array, object given in /home/ubuntu/workspace/public/index.php on line 30
+[01-Apr-2016 14:49:32 UTC] PHP Catchable fatal error:  Argument 1 passed to Phalcon\Db\Adapter\Pdo::__construct() must be of the type array, null given in /home/ubuntu/workspace/public/index.php on line 32
+[01-Apr-2016 15:25:37 UTC] PHP Catchable fatal error:  Argument 1 passed to Phalcon\Db\Adapter\Pdo::__construct() must be of the type array, object given in /home/ubuntu/workspace/public/index.php on line 30
+[01-Apr-2016 15:26:59 UTC] PHP Parse error:  syntax error, unexpected '$config' (T_VARIABLE) in /home/ubuntu/workspace/public/index.php on line 29
