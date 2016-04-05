@@ -42,9 +42,18 @@
                         URL automatica desde config del index path 
                         en este caso /public/ 
                     -->
-                    <?php echo $this->tag->image(array('images/people.png', 'class' => 'thumbnail')); ?>
+                    <?php if ($usuario->genero == 1) { ?>
+                        <?php echo $this->tag->image(array('images/man.png', 'class' => 'thumbnail')); ?>
+                    <?php } else { ?>
+                        <?php if ($usuario->genero == 2) { ?>
+                             <?php echo $this->tag->image(array('images/women.png', 'class' => 'thumbnail')); ?>
+                        <?php } else { ?>
+                                UNDEFINED
+                        <?php } ?>
+                    <?php } ?>    
+                        
                     <h5><?php echo $usuario->nombre; ?> <?php echo $usuario->apellidos; ?> </h5>
-                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+                    <p><?php echo $usuario->descripcion; ?></p>
                    <!-- <a href="#" class="button hollow tiny expanded">Buy Now</a> -->
                 </div>
             <?php } ?>

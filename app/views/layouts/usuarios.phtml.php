@@ -20,7 +20,6 @@
                             </ul>
                         </li>
                         <li><?php echo $this->tag->linkTo(array('usuarios', 'Usuarios')); ?></li>
-                        <li></li>
                     </ul>
                 </div>
                 <div class="top-bar-right">

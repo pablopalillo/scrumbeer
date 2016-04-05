@@ -3,7 +3,7 @@ a:5:{i:0;s:214:"<!DOCTYPE html>
     <head>
         <link rel="stylesheet" href="/public/css/foundation.min.css" type="text/css" />
         <link rel="stylesheet" href="/public/css/app.css" type="text/css" />
-        <title>";s:5:"title";N;i:1;s:1585:" || Srum Beer</title>
+        <title>";s:5:"title";N;i:1;s:1551:" || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -20,7 +20,6 @@ a:5:{i:0;s:214:"<!DOCTYPE html>
                             </ul>
                         </li>
                         <li><?php echo $this->tag->linkTo(array('usuarios', 'Usuarios')); ?></li>
-                        <li></li>
                     </ul>
                 </div>
                 <div class="top-bar-right">

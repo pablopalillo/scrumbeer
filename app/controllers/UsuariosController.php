@@ -1,6 +1,7 @@
 <?php 
 
 use Phalcon\Mvc\Controller;
+use Phalcon\Mvc\Model\Query;
 
 class UsuariosController extends Controller
 {
@@ -29,8 +30,25 @@ class UsuariosController extends Controller
             {
                 $usuario->estado    = '1';
                 // Para sqllite que no existen los AUTO numerico.
-                $usuario->id        = 'ROWID';
-                $result             =  $usuario->save($this->request->getPost(), array('nombre','apellidos','telefono'));    
+                // vamo a emularlo
+                $phql = "SELECT MAX(id) as id FROM Usuarios";
+                $rs   = $this->modelsManager->executeQuery($phql);
+
+                if(count($rs) > 0 )
+                {
+                    foreach ($rs as $field) 
+                    {
+                        $usuario->id = $field->id + 1 ;    
+                    }
+                }
+                else 
+                {
+                    $usuario->id = 0;   
+                    
+                }
+                
+
+                $result     =  $usuario->save($this->request->getPost(), array('nombre','apellidos','genero','telefono','descripcion'));    
                  if( !$result )
                  {
                          foreach ($usuario->getMessages() as $message) 

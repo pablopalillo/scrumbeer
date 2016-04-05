@@ -2,6 +2,7 @@
 
 use Phalcon\Forms\Form;
 use Phalcon\Forms\Element\Text;
+use Phalcon\Forms\Element\Textarea;
 use Phalcon\Forms\Element\Hidden;
 use Phalcon\Forms\Element\Select;
 use Phalcon\Validation\Validator\Email;
@@ -9,6 +10,7 @@ use Phalcon\Validation\Validator\PresenceOf;
 use Phalcon\Validation\Validator\Numericality;
 use Phalcon\Validation\Validator\Regex;
 use Phalcon\Validation\Validator\StringLength;
+use Phalcon\Validation\Validator\Identical;
 
 
 
@@ -56,6 +58,39 @@ class UsuariosForm extends Form
         
         $this->add($apellidos);
         
+        $genero = new Select(
+            "genero",
+            Genero::find(),
+            array(
+                'using'      => array('id_genero', 'genero'),
+                'useEmpty'   => true,
+                'emptyText'  => 'Seleccione',
+                'emptyValue' => null
+            )
+        );
+        
+        $genero->setLabel("genero");
+        $genero->addValidators(
+            array(
+                new PresenceOf(
+                    array(
+                        'message' => 'Genero requerido'
+                    )
+                ),
+               new Numericality(
+                    array(
+                        'message' => 'solo numeros',
+                        'cancelOnFail' => true
+                    )
+                )
+            )
+        );
+        $this->add($genero);
+        
+        
+        
+        
+        
         $telefono = new Text("telefono");
         $telefono->setLabel("telefono");
         $telefono->setFilters(array('striptags', 'string'));
@@ -92,8 +127,25 @@ class UsuariosForm extends Form
         );
         $this->add($telefono);
         
+        $descripcion = new Textarea("descripcion");
+        $descripcion->setLabel("descripcion");
+        $descripcion->setFilters(array('striptags', 'string'));
+        $this->add($descripcion);
+        
+        
+        
         // Add a text element to put a hidden CSRF
-        $this->add(new Hidden("csrf"));
+        $csrf = new Hidden(array(
+            'name' => $this->security->getTokenKey(),
+            'value' => $this->security->getToken(),
+            'id' => 'xtoken'
+        ));
+
+       $csrf->addValidator(new Identical(array(
+            'value' => $this->security->getSessionToken(),
+            'message' => 'CSRF validation failed'
+        )));
+        $this->add($csrf);
 
 
     }
