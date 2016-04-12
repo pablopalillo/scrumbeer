@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>{% block title %}{% endblock %} || Srum Beer</title>
+        {{ assets.outputCss() }}
         <link rel="stylesheet" href="{{ static_url("public/css/foundation.min.css") }}" type="text/css" />
         <link rel="stylesheet" href="{{ static_url("public/css/app.css") }}" type="text/css" />
-        <title>{% block title %}{% endblock %} || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -22,7 +23,7 @@
                         <li class="has-submenu">
                             <a href="#">Calendario</a>
                             <ul class="submenu menu vertical" data-submenu>
-                                <li>{{ link_to("calendario", "Calendario") }}</li>
+                                <li><a href="calendario">Calendario</a></li>
                             </ul>
                         </li>
                         <li>{{ link_to("usuarios", "Usuarios") }}</li>
@@ -66,5 +67,6 @@
         <script src="js/vendor/what-input.js"></script>
         <script src="js/vendor/foundation.js"></script>
         <script src="js/app.js"></script>
+        {{ assets.outputJs() }}
     </body>
 </html>

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> <?= $titulo ?>  || Srum Beer</title>
+        <?= $this->assets->outputCss() ?>
         <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/foundation.min.css') ?>" type="text/css" />
         <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/app.css') ?>" type="text/css" />
-        <title> <?= $titulo ?>  || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -22,7 +23,7 @@
                         <li class="has-submenu">
                             <a href="#">Calendario</a>
                             <ul class="submenu menu vertical" data-submenu>
-                                <li><a href="#">Horario de clase</a></li>
+                                <li><a href="calendario">Calendario</a></li>
                             </ul>
                         </li>
                         <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>
@@ -78,5 +79,6 @@
         <script src="js/vendor/what-input.js"></script>
         <script src="js/vendor/foundation.js"></script>
         <script src="js/app.js"></script>
+        <?= $this->assets->outputJs() ?>
     </body>
 </html>

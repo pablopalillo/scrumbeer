@@ -1,13 +1,86 @@
 {% extends "layouts/__main.phtml" %}
 {% block title %} {{titulo}} {% endblock %}
 {% block content %}
+    <div class="column row main">
 
-<div class="row">
+<div class="row marketing">
+    <div class="col-lg-12">
+      <h4>calendario</h4>
+      
+        <div id='calendar'></div>
 
-    <div class="small-12 medium-6 columns">
-    	calendario
-    </div>
-
+    </div>     
 </div>
 
-{% endblock %}
+
+<div class="modal fade" id="modalCitaNueva" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Nueva cita</h4>
+          </div>
+          <div class="modal-body">
+                <form class="form-horizontal" id="frm-event" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="descripcionCita">Descripción</label>
+                        <div class="col-sm-15">
+                            <textarea id="descripcionCita" name="event[descripcionCita]" style="width: 76%;" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 form-group">
+                            <label class="col-sm-2 control-label">Inicio
+                            <span class="label label-success" id="startDate"></span></label>
+                            <input type="hidden" id="EventStartDate" name="event[startDate]" value=""/>
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label class="col-sm-2 control-label">Fin 
+                            <span class="label label-warning" id="enDate"></span></label>
+                            <input type="hidden" id="EventEnDate" name="event[enDate]" value=""/>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label class="control-label">Color del evento </label>
+                            <div id="cp2" class="input-group colorpicker-component">
+                                  <input id="color" type="text" value="#23527c" name="event[color]" class="form-control"/>
+                                  <span class="input-group-addon"><i></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="savEvent">Guardar</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    </div>
+
+	 	<style>
+
+	
+		    #calendar {
+		        max-width: 900px;
+		        margin: 50px auto;
+		    }
+
+		    .closeon{
+		        position: absolute;
+		        top: 0;
+		        right: 0;
+		        margin-top: 3px;
+		        margin-right: 3px;
+		        z-index: 10;
+		    }
+
+		</style>
+	{% endblock %}
+    
+
+

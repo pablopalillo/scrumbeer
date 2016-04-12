@@ -1,9 +1,10 @@
-a:5:{i:0;s:281:"<!DOCTYPE html>
+a:5:{i:0;s:52:"<!DOCTYPE html>
 <html>
     <head>
+        <title>";s:5:"title";N;i:1;s:2268:" || Srum Beer</title>
+        <?= $this->assets->outputCss() ?>
         <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/foundation.min.css') ?>" type="text/css" />
         <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/app.css') ?>" type="text/css" />
-        <title>";s:5:"title";N;i:1;s:2016:" || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -22,7 +23,7 @@ a:5:{i:0;s:281:"<!DOCTYPE html>
                         <li class="has-submenu">
                             <a href="#">Calendario</a>
                             <ul class="submenu menu vertical" data-submenu>
-                                <li><?= $this->tag->linkTo(['calendario', 'Calendario']) ?></li>
+                                <li><a href="calendario">Calendario</a></li>
                             </ul>
                         </li>
                         <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>
@@ -48,7 +49,7 @@ a:5:{i:0;s:281:"<!DOCTYPE html>
         <?php } ?>
         
         <div class="column row main">
-            ";s:7:"content";N;i:2;s:653:"
+            ";s:7:"content";N;i:2;s:695:"
         </div>
         <div class="row column">
             <hr>
@@ -66,5 +67,6 @@ a:5:{i:0;s:281:"<!DOCTYPE html>
         <script src="js/vendor/what-input.js"></script>
         <script src="js/vendor/foundation.js"></script>
         <script src="js/app.js"></script>
+        <?= $this->assets->outputJs() ?>
     </body>
 </html>";}
