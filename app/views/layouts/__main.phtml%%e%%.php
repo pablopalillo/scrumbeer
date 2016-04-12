@@ -3,7 +3,7 @@ a:5:{i:0;s:281:"<!DOCTYPE html>
     <head>
         <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/foundation.min.css') ?>" type="text/css" />
         <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/app.css') ?>" type="text/css" />
-        <title>";s:5:"title";N;i:1;s:1993:" || Srum Beer</title>
+        <title>";s:5:"title";N;i:1;s:2016:" || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -22,7 +22,7 @@ a:5:{i:0;s:281:"<!DOCTYPE html>
                         <li class="has-submenu">
                             <a href="#">Calendario</a>
                             <ul class="submenu menu vertical" data-submenu>
-                                <li><a href="#">Horario de clase</a></li>
+                                <li><?= $this->tag->linkTo(['calendario', 'Calendario']) ?></li>
                             </ul>
                         </li>
                         <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>

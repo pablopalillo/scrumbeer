@@ -22,7 +22,7 @@
                         <li class="has-submenu">
                             <a href="#">Calendario</a>
                             <ul class="submenu menu vertical" data-submenu>
-                                <li><a href="#">Horario de clase</a></li>
+                                <li><?= $this->tag->linkTo(['calendario', 'Calendario']) ?></li>
                             </ul>
                         </li>
                         <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>

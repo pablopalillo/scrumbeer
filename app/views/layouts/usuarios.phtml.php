@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/public/css/foundation.min.css" type="text/css" />
-        <link rel="stylesheet" href="/public/css/app.css" type="text/css" />
-        <title> <?php echo $titulo; ?>  || Srum Beer</title>
+        <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/foundation.min.css') ?>" type="text/css" />
+        <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/app.css') ?>" type="text/css" />
+        <title> <?= $titulo ?>  || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -19,7 +19,13 @@
                                 <li><a href="#">Three</a></li>
                             </ul>
                         </li>
-                        <li><?php echo $this->tag->linkTo(array('usuarios', 'Usuarios')); ?></li>
+                        <li class="has-submenu">
+                            <a href="#">Calendario</a>
+                            <ul class="submenu menu vertical" data-submenu>
+                                <li><a href="#">Horario de clase</a></li>
+                            </ul>
+                        </li>
+                        <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>
                     </ul>
                 </div>
                 <div class="top-bar-right">
@@ -31,12 +37,14 @@
             </div>
         </div>
         
-        <?php if ((empty($this->flash->success) ? ($this->flash->success) : ($this->flash->success))) { ?>
-        <div class="row">
-            <div class="small-12 medium-12 columns alert alert callout">
-                <?php echo $this->flash->success; ?>
+        <?php if (isset($this->flash->success)) { ?>
+            <?php if ((empty($this->flash->success) ? ($this->flash->success) : ($this->flash->success))) { ?>
+            <div class="row">
+                <div class="small-12 medium-12 columns alert alert callout">
+                    <?= $this->flash->success ?>
+                </div>
             </div>
-        </div>
+            <?php } ?>
         <?php } ?>
         
         <div class="column row main">
@@ -45,7 +53,7 @@
         <hr>
         <article class="small-12 columns">
             <header>
-                <h1><?php echo $titulo; ?></h1>
+                <h1><?= $titulo ?></h1>
             </header>
             <section>
                 <?php echo $this->getContent(); ?>
