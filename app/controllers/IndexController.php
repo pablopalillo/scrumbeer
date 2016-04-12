@@ -1,6 +1,7 @@
 <?php 
 
 use Phalcon\Mvc\Controller;
+use Phalcon\Mvc\Url;
 
 class IndexController extends Controller
 {

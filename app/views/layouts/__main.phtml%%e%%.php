@@ -1,9 +1,9 @@
-a:5:{i:0;s:219:"<!DOCTYPE html>
+a:5:{i:0;s:281:"<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/public/css/foundation.min.css" type="text/css" />
-        <link rel="stylesheet" href="/public/css/app.css" type="text/css" />
-        <title>";s:5:"title";N;i:1;s:1567:" || Srum Beer</title>
+        <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/foundation.min.css') ?>" type="text/css" />
+        <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/app.css') ?>" type="text/css" />
+        <title>";s:5:"title";N;i:1;s:1993:" || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -19,6 +19,12 @@ a:5:{i:0;s:219:"<!DOCTYPE html>
                                 <li><a href="#">Three</a></li>
                             </ul>
                         </li>
+                        <li class="has-submenu">
+                            <a href="#">Calendario</a>
+                            <ul class="submenu menu vertical" data-submenu>
+                                <li><a href="#">Horario de clase</a></li>
+                            </ul>
+                        </li>
                         <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>
                     </ul>
                 </div>
@@ -31,12 +37,14 @@ a:5:{i:0;s:219:"<!DOCTYPE html>
             </div>
         </div>
         
-        <?php if ((empty($this->flash->success) ? ($this->flash->success) : ($this->flash->success))) { ?>
-        <div class="row">
-            <div class="small-12 medium-12 columns alert alert callout">
-                <?= $this->flash->success ?>
+        <?php if (isset($this->flash->success)) { ?>
+            <?php if ((empty($this->flash->success) ? ($this->flash->success) : ($this->flash->success))) { ?>
+            <div class="row">
+                <div class="small-12 medium-12 columns alert alert callout">
+                    <?= $this->flash->success ?>
+                </div>
             </div>
-        </div>
+            <?php } ?>
         <?php } ?>
         
         <div class="column row main">

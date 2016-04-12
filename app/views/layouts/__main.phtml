@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/public/css/foundation.min.css" type="text/css" />
-        <link rel="stylesheet" href="/public/css/app.css" type="text/css" />
+        <link rel="stylesheet" href="{{ static_url("public/css/foundation.min.css") }}" type="text/css" />
+        <link rel="stylesheet" href="{{ static_url("public/css/app.css") }}" type="text/css" />
         <title>{% block title %}{% endblock %} || Srum Beer</title>
     </head>
     <body>
@@ -19,6 +19,12 @@
                                 <li><a href="#">Three</a></li>
                             </ul>
                         </li>
+                        <li class="has-submenu">
+                            <a href="#">Calendario</a>
+                            <ul class="submenu menu vertical" data-submenu>
+                                <li><a href="#">Horario de clase</a></li>
+                            </ul>
+                        </li>
                         <li>{{ link_to("usuarios", "Usuarios") }}</li>
                     </ul>
                 </div>
@@ -31,12 +37,14 @@
             </div>
         </div>
         
-        {% if this.flash.success|default %}
-        <div class="row">
-            <div class="small-12 medium-12 columns alert alert callout">
-                {{ this.flash.success }}
+        {% if this.flash.success is defined %}
+            {% if this.flash.success|default %}
+            <div class="row">
+                <div class="small-12 medium-12 columns alert alert callout">
+                    {{ this.flash.success }}
+                </div>
             </div>
-        </div>
+            {% endif %}
         {% endif %}
         
         <div class="column row main">
