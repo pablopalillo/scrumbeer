@@ -1,9 +1,9 @@
-a:5:{i:0;s:214:"<!DOCTYPE html>
+a:5:{i:0;s:219:"<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="/public/css/foundation.min.css" type="text/css" />
         <link rel="stylesheet" href="/public/css/app.css" type="text/css" />
-        <title>";s:5:"title";N;i:1;s:1551:" || Srum Beer</title>
+        <title>";s:5:"title";N;i:1;s:1567:" || Srum Beer</title>
     </head>
     <body>
         <div class="top-bar">
@@ -19,7 +19,7 @@ a:5:{i:0;s:214:"<!DOCTYPE html>
                                 <li><a href="#">Three</a></li>
                             </ul>
                         </li>
-                        <li><?php echo $this->tag->linkTo(array('usuarios', 'Usuarios')); ?></li>
+                        <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>
                     </ul>
                 </div>
                 <div class="top-bar-right">
@@ -34,13 +34,13 @@ a:5:{i:0;s:214:"<!DOCTYPE html>
         <?php if ((empty($this->flash->success) ? ($this->flash->success) : ($this->flash->success))) { ?>
         <div class="row">
             <div class="small-12 medium-12 columns alert alert callout">
-                <?php echo $this->flash->success; ?>
+                <?= $this->flash->success ?>
             </div>
         </div>
         <?php } ?>
         
         <div class="column row main">
-            ";s:7:"content";N;i:2;s:634:"
+            ";s:7:"content";N;i:2;s:653:"
         </div>
         <div class="row column">
             <hr>
