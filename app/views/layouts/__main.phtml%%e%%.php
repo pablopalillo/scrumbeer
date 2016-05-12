@@ -1,10 +1,10 @@
-a:5:{i:0;s:52:"<!DOCTYPE html>
+a:5:{i:0;s:49:"<!DOCTYPE html>
 <html>
     <head>
-        <title>";s:5:"title";N;i:1;s:2268:" || Srum Beer</title>
-        <?= $this->assets->outputCss() ?>
-        <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/foundation.min.css') ?>" type="text/css" />
-        <link rel="stylesheet" href="<?= $this->url->getStatic('public/css/app.css') ?>" type="text/css" />
+        <title>";s:5:"title";N;i:1;s:2361:" || Srum Beer</title>
+        <?php echo $this->assets->outputCss(); ?>
+        <link rel="stylesheet" href="<?php echo $this->url->getStatic('public/css/foundation.min.css'); ?>" type="text/css" />
+        <link rel="stylesheet" href="<?php echo $this->url->getStatic('public/css/app.css'); ?>" type="text/css" />
     </head>
     <body>
         <div class="top-bar">
@@ -21,12 +21,13 @@ a:5:{i:0;s:52:"<!DOCTYPE html>
                             </ul>
                         </li>
                         <li class="has-submenu">
-                            <a href="#">Calendario</a>
+                            <a href="#">Agenda</a>
                             <ul class="submenu menu vertical" data-submenu>
                                 <li><a href="calendario">Calendario</a></li>
                             </ul>
                         </li>
-                        <li><?= $this->tag->linkTo(['usuarios', 'Usuarios']) ?></li>
+                        <li><?php echo $this->tag->linkTo(array('usuarios', 'Usuarios')); ?></li>
+                        <li><?php echo $this->tag->linkTo(array('productos', 'Productos')); ?></li>
                     </ul>
                 </div>
                 <div class="top-bar-right">
@@ -42,14 +43,14 @@ a:5:{i:0;s:52:"<!DOCTYPE html>
             <?php if ((empty($this->flash->success) ? ($this->flash->success) : ($this->flash->success))) { ?>
             <div class="row">
                 <div class="small-12 medium-12 columns alert alert callout">
-                    <?= $this->flash->success ?>
+                    <?php echo $this->flash->success; ?>
                 </div>
             </div>
             <?php } ?>
         <?php } ?>
         
         <div class="column row main">
-            ";s:7:"content";N;i:2;s:695:"
+            ";s:7:"content";N;i:2;s:683:"
         </div>
         <div class="row column">
             <hr>
@@ -67,6 +68,6 @@ a:5:{i:0;s:52:"<!DOCTYPE html>
         <script src="js/vendor/what-input.js"></script>
         <script src="js/vendor/foundation.js"></script>
         <script src="js/app.js"></script>
-        <?= $this->assets->outputJs() ?>
+        <?php echo $this->assets->outputJs(); ?>
     </body>
 </html>";}

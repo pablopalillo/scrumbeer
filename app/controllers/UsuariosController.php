@@ -62,7 +62,14 @@ class UsuariosController extends Controller
                              
                 $this->view->form->clear();
                 $this->flash->success("Usuario Creado");
-                $this->dispatcher->forward(['action' => 'index']);
+                $this->response->redirect('/index');
+        
+/**                $this->dispatcher->forward(
+                    array(
+                            "controller" => "usuarios",
+                            "action"     => "index"
+                        )
+                    ); **/
                 return;
             
             }

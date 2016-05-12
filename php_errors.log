@@ -121,3 +121,4 @@
 [01-Apr-2016 22:36:31 UTC] PHP Fatal error:  Class 'Identical' not found in /home/ubuntu/workspace/app/forms/UsuariosForm.php on line 103
 [04-Apr-2016 21:58:59 UTC] PHP Fatal error:  Call to a member function executeQuery() on a non-object in /home/ubuntu/workspace/app/controllers/UsuariosController.php on line 33
 [05-Apr-2016 14:12:51 UTC] PHP Fatal error:  Class 'Textarea' not found in /home/ubuntu/workspace/app/forms/UsuariosForm.php on line 96
+[12-May-2016 22:30:05 UTC] PHP Notice:  Access to undefined property Productos::cantidad in /home/ubuntu/workspace/app/views/productos/index.phtml.php on line 15

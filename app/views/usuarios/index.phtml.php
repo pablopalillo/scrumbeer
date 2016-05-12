@@ -43,17 +43,17 @@
                         en este caso /public/ 
                     -->
                     <?php if ($usuario->genero == 1) { ?>
-                        <?= $this->tag->image(['images/man.png', 'class' => 'thumbnail']) ?>
+                        <?php echo $this->tag->image(array('images/man.png', 'class' => 'thumbnail')); ?>
                     <?php } else { ?>
                         <?php if ($usuario->genero == 2) { ?>
-                             <?= $this->tag->image(['images/women.png', 'class' => 'thumbnail']) ?>
+                             <?php echo $this->tag->image(array('images/women.png', 'class' => 'thumbnail')); ?>
                         <?php } else { ?>
                                 UNDEFINED
                         <?php } ?>
                     <?php } ?>    
                         
-                    <h5><?= $usuario->nombre ?> <?= $usuario->apellidos ?> </h5>
-                    <p><?= $usuario->descripcion ?></p>
+                    <h5><?php echo $usuario->nombre; ?> <?php echo $usuario->apellidos; ?> </h5>
+                    <p><?php echo $usuario->descripcion; ?></p>
                    <!-- <a href="#" class="button hollow tiny expanded">Buy Now</a> -->
                 </div>
             <?php } ?>

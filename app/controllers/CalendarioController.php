@@ -8,7 +8,7 @@ class CalendarioController extends \Phalcon\Mvc\Controller
     	$this->view->titulo = "Calendario";
         $this->view->name = "Mi calendario";
     	$this->assets
-            ->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',false,'', array('rel'=> 'stylesheet', 'integrity'=>'sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', 'crossorigin'=>'anonymous'))
+//            ->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',false,'', array('rel'=> 'stylesheet', 'integrity'=>'sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', 'crossorigin'=>'anonymous'))
             ->addCss('public/vendor/fullcalendar/lib/fullcalendar.min.css',true,'',array('rel'=> 'stylesheet') )
             ->addCss('public/vendor/fullcalendar/lib/fullcalendar.print.css',true,'',array('rel'=> 'stylesheet', 'media'=>'print') )
             ->addCss('public/vendor/fullcalendar/lib/bootstrap-fullcalendar.css',true,'',array('rel'=> 'stylesheet') )

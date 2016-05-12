@@ -1,0 +1,25 @@
+<div id="productos">
+    
+
+   {% for prod in productos %}
+   <div class="row">
+        <div class="small-12 medium-6 columns">
+            {{ prod.producto }}
+        </div>
+        
+        <div class="small-12 medium-6 columns">   
+            <div>
+                {{ prod.descripcion }}
+            </div>
+            <div>
+                {{ prod.unidades }}
+            </div>
+            <div>
+                {{ prod.valor }}
+            </div>
+        </div>
+        
+    </div>
+    {% endfor %}
+
+</div>
