@@ -1,7 +1,10 @@
-a:5:{i:0;s:49:"<!DOCTYPE html>
-<html>
+a:5:{i:0;s:233:"<!DOCTYPE html>
+<html lang="ES">
     <head>
-        <title>";s:5:"title";N;i:1;s:2361:" || Srum Beer</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>";s:5:"title";N;i:1;s:2455:" || Srum Beer</title>
         <?php echo $this->assets->outputCss(); ?>
         <link rel="stylesheet" href="<?php echo $this->url->getStatic('public/css/foundation.min.css'); ?>" type="text/css" />
         <link rel="stylesheet" href="<?php echo $this->url->getStatic('public/css/app.css'); ?>" type="text/css" />
@@ -32,6 +35,7 @@ a:5:{i:0;s:49:"<!DOCTYPE html>
                 </div>
                 <div class="top-bar-right">
                     <ul class="menu">
+                        <li><?php echo $this->tag->linkTo(array('login', 'Acceder')); ?></li>
                         <li><input type="search" placeholder="Search"></li>
                         <li><button type="button" class="button">Search</button></li>
                     </ul>

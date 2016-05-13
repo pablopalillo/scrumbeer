@@ -1,25 +1,14 @@
 <div id="productos">
     
-
+    <div class="row medium-up-3 large-up-5">
    {% for prod in productos %}
-   <div class="row">
-        <div class="small-12 medium-6 columns">
-            {{ prod.producto }}
-        </div>
-        
-        <div class="small-12 medium-6 columns">   
-            <div>
-                {{ prod.descripcion }}
-            </div>
-            <div>
-                {{ prod.unidades }}
-            </div>
-            <div>
-                {{ prod.valor }}
-            </div>
-        </div>
-        
-    </div>
+       <div class="column" >
+           <h5>{{ prod.producto }}</h5>
+           <p> {{ prod.descripcion }}</p>
+           <p><strong>Cant:</strong> {{ prod.unidades }}  </p>
+           <h3><small>${{ prod.valor }}</small></h3>
+           <a href="#" class="button hollow tiny expanded">Buy Now</a>
+       </div>
     {% endfor %}
-
+    </div>
 </div>

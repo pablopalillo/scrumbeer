@@ -11,6 +11,8 @@ use Phalcon\Validation\Validator\Numericality;
 use Phalcon\Validation\Validator\Regex;
 use Phalcon\Validation\Validator\StringLength;
 use Phalcon\Validation\Validator\Identical;
+use Phalcon\Forms\Element\Password;
+
 
 
 
@@ -131,6 +133,16 @@ class UsuariosForm extends Form
         $descripcion->setLabel("descripcion");
         $descripcion->setFilters(array('striptags', 'string'));
         $this->add($descripcion);
+        
+        $usuario = new Text("usuario");
+        $usuario->setLabel("Usuario");
+        $usuario->setFilters(array('striptags', 'string'));
+        $this->add($usuario);
+        
+        
+        $password = new Password("password");
+        $password->setLabel("Password");
+        $this->add($password);
         
         
         

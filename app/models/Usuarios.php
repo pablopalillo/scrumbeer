@@ -14,6 +14,10 @@ class Usuarios extends Model
     
     public $telefono;
     
+    public $usuario;
+    
+    public $password;
+    
     public $estado;
     
     public $descripcion;

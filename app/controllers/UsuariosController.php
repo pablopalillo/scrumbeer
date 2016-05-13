@@ -79,4 +79,11 @@ class UsuariosController extends Controller
         
     }
     
+    public function loginAction()
+    {
+        $this->view->titulo             = "Login";
+        $this->view->form               = new LoginForm;
+        
+    }
+    
 }
